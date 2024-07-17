@@ -2,6 +2,7 @@ import json
 
 
 class Vacancy:
+    """Класс для работы с основными данными по вакансиям"""
     def __init__(self, name, salary, url, employer):
         name: str
         url: str

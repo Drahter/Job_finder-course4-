@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 
 
 class AbstractAPI(ABC):
+    """Абстрактный класс для создания различных классов, получающих данные от API"""
     @abstractmethod
     def get_response(self, text, per_page):
         pass
@@ -13,6 +14,7 @@ class AbstractAPI(ABC):
 
 
 class HeadHunterAPI(AbstractAPI):
+    """Класс для взаимодействия с API ресурса HH.ru"""
     def __init__(self):
         self.url = "https://api.hh.ru/vacancies"
 
